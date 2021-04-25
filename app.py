@@ -18,7 +18,7 @@ def predict():
     sepal_width = float(request.form['sepal_width'])
     petal_length = float(request.form['petal_length'])
     petal_width = float(request.form['petal_width'])
-    prediction = model.predict([[sepal_length,sepal_width,petal_length,petal_width]])
+    prediction = model.predict(np.array([[sepal_length,sepal_width,petal_length,petal_width]]))
 
     
 
